@@ -1,0 +1,55 @@
+﻿@page
+@model WebAppSignalR.Pages.SignalRModel
+@{
+    ViewData["Title"] = "SignalR";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div>
+    <h1>SignalR</h1>
+    <article>
+        This is my Helper Page for SignalR experiments.
+    </article>
+</div>
+
+<div class="container wrap">
+    <div class="row">
+        <div class="col-12">
+            <div class="card text-success">
+                <div class="card-header" id="accordion">
+                    <span class="fas fa-comment"></span>Let's Chat
+                    <div class="btn-group fa-pull-right">
+                        <a type="button" class="btn btn-default btn-xs" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            <span class="fas fa-chevron-down"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse" id="collapseOne">
+                    <div class="panel-body">
+                        <ul id="messageList" class="chat"></ul>
+                    </div>
+                    <div class="card-footer">
+                        <div class="input-group">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" id="userName" class="form-control input-sm" placeholder="Type Ur Name." />
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="text" id="userMessage" class="form-control input-sm" placeholder="Type Ur Message." />
+                                </div>
+                                <div>
+                                    <input type="button" value="Sent" id="sendMessage" class="btn-danger btn-sm" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+
+
+
