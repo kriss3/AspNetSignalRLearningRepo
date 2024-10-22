@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28822.285
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppSignalR", "WebAppSignalR\WebAppSignalR.csproj", "{F9D0A1C3-7DF8-4938-BC20-5DCF16E3FCAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppSignalR", "WebAppSignalR\WebAppSignalR.csproj", "{F9D0A1C3-7DF8-4938-BC20-5DCF16E3FCAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6BDBCCA1-94AB-454B-AAE0-E74E5B25566E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConAppSignalApp.Client", "ConAppSignalApp.Client\ConAppSignalApp.Client.csproj", "{F8BEE360-3D25-4565-A594-15575148B0E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibSignalRApp.HubApp", "ClassLibSignalRApp.Hub\ClassLibSignalRApp.HubApp.csproj", "{F51C818A-931F-403B-ACCD-57E1136128C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,22 @@ Global
 		{F9D0A1C3-7DF8-4938-BC20-5DCF16E3FCAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9D0A1C3-7DF8-4938-BC20-5DCF16E3FCAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9D0A1C3-7DF8-4938-BC20-5DCF16E3FCAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8BEE360-3D25-4565-A594-15575148B0E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8BEE360-3D25-4565-A594-15575148B0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8BEE360-3D25-4565-A594-15575148B0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8BEE360-3D25-4565-A594-15575148B0E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F51C818A-931F-403B-ACCD-57E1136128C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F51C818A-931F-403B-ACCD-57E1136128C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F51C818A-931F-403B-ACCD-57E1136128C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F51C818A-931F-403B-ACCD-57E1136128C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F9D0A1C3-7DF8-4938-BC20-5DCF16E3FCAA} = {6BDBCCA1-94AB-454B-AAE0-E74E5B25566E}
+		{F8BEE360-3D25-4565-A594-15575148B0E5} = {6BDBCCA1-94AB-454B-AAE0-E74E5B25566E}
+		{F51C818A-931F-403B-ACCD-57E1136128C5} = {6BDBCCA1-94AB-454B-AAE0-E74E5B25566E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2B1D33F2-B6C7-461F-8177-EAF54C016EE2}
