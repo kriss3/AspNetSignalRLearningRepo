@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConAppSignalApp.Client", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibSignalRApp.HubApp", "ClassLibSignalRApp.Hub\ClassLibSignalRApp.HubApp.csproj", "{F51C818A-931F-403B-ACCD-57E1136128C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRDemo.HubApp", "SignalRDemo.HubApp\SignalRDemo.HubApp.csproj", "{AE7EA39C-14EA-4F8F-A97E-FCE2EE2CA15C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{F51C818A-931F-403B-ACCD-57E1136128C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F51C818A-931F-403B-ACCD-57E1136128C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F51C818A-931F-403B-ACCD-57E1136128C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE7EA39C-14EA-4F8F-A97E-FCE2EE2CA15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7EA39C-14EA-4F8F-A97E-FCE2EE2CA15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7EA39C-14EA-4F8F-A97E-FCE2EE2CA15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE7EA39C-14EA-4F8F-A97E-FCE2EE2CA15C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{F9D0A1C3-7DF8-4938-BC20-5DCF16E3FCAA} = {6BDBCCA1-94AB-454B-AAE0-E74E5B25566E}
 		{F8BEE360-3D25-4565-A594-15575148B0E5} = {6BDBCCA1-94AB-454B-AAE0-E74E5B25566E}
 		{F51C818A-931F-403B-ACCD-57E1136128C5} = {6BDBCCA1-94AB-454B-AAE0-E74E5B25566E}
+		{AE7EA39C-14EA-4F8F-A97E-FCE2EE2CA15C} = {6BDBCCA1-94AB-454B-AAE0-E74E5B25566E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2B1D33F2-B6C7-461F-8177-EAF54C016EE2}
