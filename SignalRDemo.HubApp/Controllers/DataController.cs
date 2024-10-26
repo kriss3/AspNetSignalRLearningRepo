@@ -14,6 +14,6 @@ public class DataController(IHubContext<DataHub> hubContext) : ControllerBase
 	public async Task<IActionResult> SendData([FromBody] string message)
 	{
 		await _hubContext.Clients.All.SendAsync("ReceiveData", message);
-		return Ok(new { Message = "Data sent to clients" });
+		return Ok(new { Message = "This is internal log from API, to verify message pushed to connected client." });
 	}
 }

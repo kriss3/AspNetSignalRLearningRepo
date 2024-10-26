@@ -9,17 +9,18 @@ public class Program
 	{
 		WriteLine("Hello, World, from SignalR!");
 
-		var hubUrl = "http://localhost:7254/dataHub"; // if this works move the url to appsettings.json
+		var hubUrl = "https://localhost:7254/dataHub"; // if this works move the url to appsettings.json
 
 		// Build the SignalR connection
 		var connection = new HubConnectionBuilder()
 			.WithUrl(hubUrl)
 			.Build();
 
-		// Register a handler to listen for messages from the hub
-		connection.On<string>("ReceiveMessage", (message) =>
+		// Register a handler to listen for messages from the hub. 
+		// IMPORTANT: The method name must match the method name defined in the hub.
+		connection.On<string>("ReceiveData", (message) =>
 		{
-			WriteLine($"Received message: {message}");
+			WriteLine("Received data: " + message);
 		});
 
 		try
