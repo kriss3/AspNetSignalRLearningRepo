@@ -1,20 +1,26 @@
 ﻿namespace ConAppSignalApp.Client;
 
+using ConAppSignalApp.Client.Models;
 using Microsoft.AspNetCore.SignalR.Client;
+using Microsoft.Extensions.Configuration;
+
 using static System.Console;
 
 public class Program
 {
 	static async Task Main()
 	{
+		const string localApiUrl = @"https://localhost:7254/dataHub";
 		WriteLine("Hello, World, from SignalR!");
+		var config = BuildAppConfig();
 
-		
-		var hubUrl = "https://localhost:7254/dataHub"; // if this works move the url to appsettings.json
+		var appSettings = new AppSettingsModel();
+		config.GetSection("SignalR").Bind(appSettings);
+		var hubUrl = appSettings.HubUrl;
 
 		// Build the SignalR connection
 		var connection = new HubConnectionBuilder()
-			.WithUrl(hubUrl)
+			.WithUrl(hubUrl ?? localApiUrl)
 			.Build();
 
 		// Register a handler to listen for messages from the hub. 
@@ -43,5 +49,14 @@ public class Program
 			await connection.DisposeAsync();
 		}
 
+	}
+
+	private static IConfiguration BuildAppConfig()
+	{
+		var configuration = new ConfigurationBuilder()
+			.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+			.Build();
+
+		return configuration;
 	}
 }
