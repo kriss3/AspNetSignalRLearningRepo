@@ -1,4 +1,6 @@
 
+using SignalRDemo.HubApp.Hubs;
+
 namespace SignalRDemo.HubApp;
 
 public class Program
@@ -27,8 +29,9 @@ public class Program
 
 		app.UseAuthorization();
 
-
 		app.MapControllers();
+
+		app.MapHub<DataHub>("/datahub");
 
 		app.Run();
 	}
