@@ -9,7 +9,7 @@ public class Program
 	{
 		WriteLine("Hello, World, from SignalR!");
 
-		var hubUrl = "This will be my in-Solutons Hub url.";
+		var hubUrl = "http://localhost:7254/dataHub"; // if this works move the url to appsettings.json
 
 		// Build the SignalR connection
 		var connection = new HubConnectionBuilder()
@@ -26,11 +26,11 @@ public class Program
 		{
 			// Start the connection
 			await connection.StartAsync();
-			WriteLine("Connection started");
+			WriteLine("Connection started...");
 
 			// Keep the app running to listen for updates
-			WriteLine("Listening for updates. Press any key to exit...");
-			ReadKey();
+			WriteLine("Connected to the Server. \nListening for updates. Press any key to exit...");
+			ReadLine();
 		}
 		catch (Exception ex)
 		{
