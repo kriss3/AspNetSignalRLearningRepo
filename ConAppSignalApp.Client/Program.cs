@@ -9,6 +9,7 @@ public class Program
 	{
 		WriteLine("Hello, World, from SignalR!");
 
+		
 		var hubUrl = "https://localhost:7254/dataHub"; // if this works move the url to appsettings.json
 
 		// Build the SignalR connection
