@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using SignalRDemo.HubApp.Models;
 
 namespace SignalRDemo.HubApp.Controllers;
 [ApiController]
