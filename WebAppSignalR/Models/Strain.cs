@@ -1,4 +1,6 @@
-﻿namespace WebAppSignalR.Models;
+﻿using Functional;
+
+namespace WebAppSignalR.Models;
 
 public record Strain(
 		int Id,
